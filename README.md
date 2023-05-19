@@ -1,54 +1,24 @@
-# CodeIgniter 4 Framework
+# My Tutor
 
-## What is CodeIgniter?
+My Tutor is a CRUD example web application that connects tutors with students. Tutors can set their available hours, and students can browse and book available tutors for one-on-one tutoring sessions. The application is built using the CodeIgniter 4 framework and Bootstrap 4.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Features
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- Tutors can create a profile and set their available hours.
+- Students can browse available tutors and book sessions.
+- Tutors and students can communicate through the application's messaging system.
+- Tutors can view their upcoming sessions and mark sessions as completed.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## Deployment
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+To deploy My Tutor using XAMPP, you will need to follow these steps:
 
-## Important Change with index.php
+1.  Clone the repository from GitHub and move the project folder to the htdocs folder of your XAMPP installation.
+2.  Create a new database for the application using phpMyAdmin.
+3.  Edit .env file with requierd data such as username, database, and password.
+4.  Start the Apache and MySQL servers in XAMPP.
+5.  Open a web browser and navigate to webapp.localhost. The application should now be accessible.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+#### Thanks
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+We would like to thank our clients for their support and feedback, although they have requested to remain anonymous. Additionally, we would like to extend our thanks to our professor Alvaro for his guidance and support throughout the development process.
